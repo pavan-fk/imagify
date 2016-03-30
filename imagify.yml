@@ -1,0 +1,10 @@
+server:
+  type: default
+  allowedMethods:
+    - POST
+  applicationConnectors:
+    - type: http
+      port: 8223
+  adminConnectors:
+    - type: http
+      port: 8224

@@ -10,6 +10,10 @@ import io.dropwizard.setup.Environment;
  * Time: 12:26 AM
  **/
 public class APIApplication extends Application<APIConfiguration> {
+    public static void main(String[] args) throws Exception {
+        new APIApplication().run(args);
+    }
+
     @Override
     public void run(APIConfiguration configuration, Environment environment) throws Exception {
         APIResource apiResource = new APIResource();
