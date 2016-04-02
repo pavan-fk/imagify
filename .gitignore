@@ -4,7 +4,7 @@
 # IntelliJ project files
 .idea
 *.iml
-.gradle
+.gradle/*
 out
 gen
 # Created by .ignore support plugin (hsz.mobi)

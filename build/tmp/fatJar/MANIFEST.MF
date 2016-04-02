@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
-Implementation-Title: Gradle Jar File Example
+Implementation-Title: Imagify API Gradle Jar File
 Main-Class: imagify.api.APIApplication
 
