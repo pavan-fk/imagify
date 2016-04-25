@@ -21,6 +21,10 @@ public class APIResource {
     @Produces("image/png")
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
     public Response dummy(@FormParam("tweet") String tweet) {
+        //1130 characters at current font
+        if (tweet.length() > 1130) {
+            return Response.status(Response.Status.BAD_REQUEST).entity("Size of tweet too large").build();
+        }
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         BufferedImage bufferedImage = new BufferedImage(320, 480,
                 BufferedImage.TYPE_INT_RGB);
